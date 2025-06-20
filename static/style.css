@@ -1,18 +1,18 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* Primary Background */
+    color: #E0E0E0; /* Primary Text Color */
 }
 
 nav {
-    background-color: #333;
+    background-color: #6A0DAD; /* Deeper purple for nav bar */
     padding: 1em;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #FFFFFF; /* Nav a color */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -24,13 +24,13 @@ nav a:hover {
 main {
     width: 80%;
     margin: 20px auto;
-    background-color: white;
+    background-color: #1E1E1E; /* Secondary Background */
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.3); /* Purple glow */
 }
 
 h1, h2 {
-    color: #333;
+    color: #BB86FC; /* Lighter purple for headers */
 }
 
 ul {
@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #333333; /* Darker border */
     padding: 10px 0;
 }
 
@@ -48,12 +48,13 @@ li:last-child {
 }
 
 a {
-    color: #007bff;
+    color: #9B59B6; /* Accent Purple */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #BB86FC; /* Lighter Purple for hovers */
 }
 
 form div {
@@ -69,9 +70,11 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #555555; /* Border color */
     border-radius: 4px;
     box-sizing: border-box; /* Important to include padding and border in the element's total width and height */
+    background-color: #2C2C2C; /* Background color */
+    color: #E0E0E0; /* Text color */
 }
 
 textarea {
@@ -79,8 +82,8 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
-    color: white;
+    background-color: #9B59B6; /* Button Background */
+    color: #FFFFFF; /* Button Text */
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -88,12 +91,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #BB86FC; /* Lighter Purple for hovers */
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
     font-size: 0.9em;
-    color: #666;
+    color: #AAAAAA; /* Lighter grey for footer text */
 }
