@@ -97,3 +97,31 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Optional: adds rounded corners */
+}
+
+.thumbnail-image {
+    max-width: 150px; /* Slightly larger for better visibility */
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Optional: adds rounded corners */
+    border: 1px solid #ddd; /* Optional: adds a light border */
+    padding: 3px; /* Optional: padding around the image */
+}
+
+.edit-preview-image {
+    max-width: 200px;
+    max-height: 200px; /* Added to prevent overly tall previews */
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
