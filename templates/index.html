@@ -10,8 +10,13 @@
         {% for post in posts %}
         <li>
             <h2><a href="{{ url_for('get_post', post_id=post.id) }}">{{ post.title }}</a></h2>
-            <a href="{{ url_for('edit_post', post_id=post.id) }}">Edit</a>
-            <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete</a>
+            {% if post.image %}
+                <img class="thumbnail-image" src="{{ url_for('static', filename='uploads/' + post.image) }}" alt="{{ post.title }} thumbnail">
+            {% endif %}
+            <div> <!-- Added a div for better layout of buttons -->
+                <a href="{{ url_for('edit_post', post_id=post.id) }}">Edit</a>
+                <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete</a>
+            </div>
         </li>
         {% else %}
         <li>No posts yet.</li>
