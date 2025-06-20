@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Blog Posts - My Blog{% endblock %}
+
+{% block content %}
+    <h1>Blog Posts</h1>
+    {# The link to "Add New Post" is now in base.html's nav, so we can remove it from here if desired, or keep it for emphasis. For now, keeping it as belt-and-suspenders is fine, or remove the one directly below. The nav bar one is more standard. Let's remove the one below to avoid duplication. #}
+    {# <a href="{{ url_for('add_post') }}">Add New Post</a> #}
+    <ul>
+        {% for post in posts %}
+        <li>
+            <h2><a href="{{ url_for('get_post', post_id=post.id) }}">{{ post.title }}</a></h2>
+            <a href="{{ url_for('edit_post', post_id=post.id) }}">Edit</a>
+            <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete</a>
+        </li>
+        {% else %}
+        <li>No posts yet.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Post - My Blog{% endblock %}
+
+{% block content %}
+    <h1>Add New Post</h1>
+    <form method="POST" action="{{ url_for('add_post') }}">
+        <div>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <br>
+        <div>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="5" cols="30" required></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Add Post</button>
+        </div>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a> {# This link could also be removed if nav is sufficient #}
+{% endblock %}
